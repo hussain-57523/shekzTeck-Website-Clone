@@ -1,0 +1,28 @@
+/* Ensure images are responsive */
+.profile-image-01, .profile-image-02 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust layout on mobile screens */
+@media (max-width: 576px) {
+    /* Stack the columns vertically */
+    .col-xl-6, .col-lg-6, .col-md-12, .col-12 {
+        flex: 0 0 100%; /* Make columns full-width */
+        max-width: 100%;
+    }
+
+    /* Center the images and add spacing */
+    .profile-image-01, .profile-image-02 {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    /* Add padding to prevent text overlap */
+    .container > .row > .col-xl-6:last-child {
+        padding-top: 15px; /* Space between image and text section */
+    }
+    
+}
+

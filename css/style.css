@@ -1,0 +1,273 @@
+/* Default (Light Mode) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+.custom-col {
+  background-color: #ffffff;
+  border-color: #8B4513;
+}
+
+.mode-toggle button {
+  background-color: #8B4513;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .custom-col {
+  background-color: #333333;
+  border-color: #ffffff;
+}
+
+body.dark-mode .mode-toggle button {
+  background-color: #ffffff;
+  color: #8B4513;
+}
+.container.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+
+.headerColor{
+    background-color: #1f053b;
+    color: black;
+}
+.education-section {
+  color: #ffffff;
+  padding: 40px;
+  position: relative;
+}
+
+.educationDiv p {
+  /* Remove fixed width, allow it to wrap naturally */
+  max-width: 100%; /* Ensures it doesn't overflow */
+  margin: 0; /* Reset margin for better alignment */
+}
+
+.heading-01 {
+  font-size: 54px; /* Keep the original font size */
+  font-weight: 700; /* Keep the original weight */
+}
+
+.education-label {
+  background-color: #d7d1fc;
+  color: #4a3f8e;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex; /* Keep the flexbox layout */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center images */
+  position: relative; /* Keep as relative for normal flow */
+}
+
+.image1, .image2 {
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #3e3e3e;
+  margin: 0 10px; /* Add spacing between images */
+}
+
+.image2 {
+  width: auto; /* Let it scale naturally */
+  max-width: 170px; /* Retain original maximum */
+  max-height: 340px; /* Retain original maximum */
+  z-index: 2;
+  margin-top: 135px; /* Keep the original margin */
+  margin-left: 170px
+}
+
+.image1 {
+  width: auto; /* Let it scale naturally */
+  max-width: 260px; /* Retain original maximum */
+  position: absolute; /* Keep as absolute if required */
+  top: -20px; /* Retain original positioning */
+  left: 390px; /* Keep the original left positioning */
+  z-index: 1;
+  background-color: #2e2e2e;
+}
+
+.circle-bg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+  top: 30px; /* Keep original design */
+  left: 340px; /* Maintain original left positioning */
+  z-index: 0;
+  margin-left: 10px;
+}
+
+/* Keep this section as it is if required */
+.coloringOGrid h4 p {
+  background-color: #4a3f8e;
+}
+
+.trainingarea__content {
+  border: solid black 1px;
+  font-size: 15px;
+  width: 25rem; /* Keep this if necessary */
+}
+
+.custom-col {
+  border: 2px solid #35414b;
+  border-radius: 6px;
+  padding: 10px;
+  flex: 1; /* Allows the column to grow and fill space */
+}
+
+/* Ensure all text is properly aligned */
+.custom-col p {
+  text-align: left;
+  margin: 5px;
+}
+
+/* Remove the right margin from the last column */
+.custom-col:last-child {
+  margin-right: 0; /* Fixed syntax */
+}
+
+/* Ensure the section has some padding or margin as needed */
+section {
+    padding: 20px; /* Adjust as necessary */
+}
+
+/* Style the column that contains the background image */
+.col-xl-6, .col-lg-6, .col-md-12, .col-12 {
+    position: relative; /* Enable positioning for the child elements */
+}
+
+/* Background image styling */
+.profile-image-01 {
+    position: absolute; /* Allow positioning on top of the text */
+    top: 0; /* Positioning as needed */
+    left: 0; /* Positioning as needed */
+    width: 570px; /* Make it responsive */
+    height: 539.61px; /* Maintain aspect ratio */
+    z-index: 1; /* Set below the profile image */
+    opacity: 100%;
+}
+
+/* Profile image styling */
+.profile-image-02 {
+    position: absolute; /* Position this image on top of the background */
+    left: 10%; /* Adjust this value to position as needed */
+    height: 515px;
+    width: 453; /* Keep it responsive */
+    opacity: 100%;
+    max-width: 100%; /* Set a max width if necessary */
+    z-index: 2; /* Ensure this is above the background image */
+}
+
+/* Additional styling for text */
+p, h2 {
+    position: relative; /* Positioning relative to the column */
+    z-index: 3; /* Ensure text is above the images */
+    color: #ffffff; /* Set text color for visibility against background */
+}
+
+.bg-light-purple {
+  background-color: #e1d5ff; /* Replace with the specific purple shade you want */
+}
+.list-unstyled li {
+  margin-bottom: 2rem; /* Adjust the spacing as needed */
+}
+
+
+/* Custom purple background for the badge */
+.bg-light-purple {
+  background-color: #e1d5ff; /* Replace with the exact light purple shade */
+}
+
+/* Custom styling for cards */
+.card-body h5 {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background-color: #6565d1; /* Light background color */
+  color: white;
+}
+.custom-Section-area{
+  margin-top: 2rem;
+}
+/* Hover effect: shadow and scale up */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.side-shadow {
+  box-shadow: -4px 0px 10px rgba(235, 210, 210, 0.2), 4px 0px 10px rgba(224, 223, 223, 0.2);
+}
+.highlight-text { 
+  color: black;
+  background-color: #e1d5ff;
+  padding: 5px 5px;
+  border-radius: 15px; /* Optional for rounded edges */
+}
+/* .card-img-top a{
+  background-color: #6565d1;
+} */
+/* .youtubeCards .card-img-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .youtubeCards .card-img-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.custom-card-group .card:hover {
+  transition: none;
+  box-shadow:none;
+  border-radius: 15px;
+  margin-right: 1rem; /* Adjust the spacing as needed */
+}
+
+/* .custom-card-group .card:last-child {
+  margin-right: 0; /* Remove the margin from the last card */
+/* } */
+
+.footer a {
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+  color: #ccc; /* Optional: Change link color on hover for better visibility */
+}
+
+.custom-link {
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+.custom-link:hover {
+  color: #ccc; /* Change link color on hover for better visibility */
+}
